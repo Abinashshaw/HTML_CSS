@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container  {
+    border: 1px solid #eee;
+    max-width: 600px;
+    margin: 0px auto;
+} 
+
+ul li { 
+    list-style-type : none;
+    display: inline-block;
+    padding : 14px 0px;
+}
+
+#prev, #next, .days li{
+    cursor: pointer;
+}
+
+#prev:hover, #next:hover, .days li:hover, .active{
+    background-color: lightblue;
+    color: white;
+}
+
+.month{
+    height: 280px;
+    background-color: lightblue;
+    background-image: url('img_mountains.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* width: 50%; */
+    margin: 0px auto;
+    text-align: center;
+}
+
+.month :last-child {
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#prev {
+    float: left;
+    margin-left: 10px;
+}
+
+#next {
+    float : right;
+    margin-right: 10px;
+}
+
+#prev, #next{  
+    margin-top: 125px;
+    color: white;
+}
+/* 
+.days, .weekdays {
+    margin: 0px auto;
+} */
+
+.weekdays {
+    background: silver;
+}
+
+.weekdays li, .days li {
+    width: 13.71%;
+    text-align: center;
+}
+
+.days {
+    background: #eee;
+}
+
+.weekdays ul :first-child, .days ul :nth-child(7n+1) {
+    color: red;
+    font-weight: 700;
+}
+

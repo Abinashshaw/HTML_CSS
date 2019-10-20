@@ -1,0 +1,67 @@
+body {
+    background-color: lightyellow;
+}
+
+header {
+    text-align: center;
+    border: 1px solid #eeeeee;
+    background: lightsteelblue;
+}
+header span {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+#img1 {
+    height: 168px;
+    width: 250px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.main {
+    padding: 10px;
+    margin-top: 20px;
+    background-color: silver;
+}
+
+h2, h3, h4 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+#description::first-letter {
+    font-size: 200%;
+    font-weight: bold;
+}
+.articles {
+    margin: 20px 0px;
+    background-color: lightgrey;
+    padding: 5px 10px;
+}
+
+aside {
+    max-width: 100%;
+}
+
+#img2, #img3, #img4 {
+    height : 10%;
+    width : 100%;
+    display: block;
+    margin: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    float: top;
+}
+
+.col-sm-2 aside {
+    margin: 20px 0px;
+}
+
+aside img:hover {
+    opacity: 0.5;
+}

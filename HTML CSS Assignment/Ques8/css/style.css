@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    max-width: 100%;
+    margin: 10px 0px;
+}
+
+.row {
+    margin: 0px;
+}
+
+.row > div {
+    border-right: 0.5px dotted black;
+    position: relative;
+}
+
+.description {
+    padding-bottom: 20px;
+    
+}
+
+h4 {
+    color: rgb(9, 9, 160);
+    font-size: 24px;
+}
+
+p {
+    font-size: 16px;
+}
+
+.description + div {
+    background-color: rgb(5, 5, 126);
+}
+
+.mybtn {
+    background-color: rgb(5, 5, 126);
+    color: white;
+    padding: 1px 6.5px;
+    position: absolute;
+    bottom: -25px;
+    right: 25px;
+}
+
+.row :last-child {    
+    border-right: none;
+}
+
+@media screen and (max-width: 768px) {
+    h4 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .row > div {
+        border-style: none;
+        border-bottom: 0.5px dotted black;
+        margin-top: 5px;
+        padding-bottom: 20px;
+    }
+
+    .row :last-child {    
+        border-bottom: none;
+    }
+
+    .mybtn {
+        bottom: 20px;
+        right: 0px;
+    }
+
+    .description {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .container {
+        width: 320px;
+    }
+}

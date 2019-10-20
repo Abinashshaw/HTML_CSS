@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
+    list-style: none;
+}
+
+.container, .row {
+    display: inline-block;
+}
+
+.container {
+    border: 1px solid black;
+    padding: 20px 40px;
+    margin: 20px 80px;
+    background-color: powderblue;
+    height: 520px;
+    width: 350px;
+}
+
+.row {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.student, .course {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 95%;
+    margin: 10px 6.5px;
+
+    ul {
+        color: white;
+        padding: 0px 0px 6.5px 0px;
+        li {
+            padding: 6.5px 14px;
+            border-bottom: 0.5px dotted;
+            font-size: 14px;
+        }
+
+        :last-child {
+            border-style: none;
+        }
+    }
+}
+
+h2 {
+    // border: 2px solid yellow;
+    font-size: 16px;
+    color: yellow;
+    padding: 20px 0px 5px 14px;
+    // display: block;
+    // border-style: none;
+    font-weight: 400;
+}
+
+.student {
+    background-color: rgb(5, 5, 94);
+    top: 0px;
+
+    ul {
+        li {
+            border-color: white;
+        }
+    }
+    
+}
+
+.course {
+    background-color: rgb(14, 172, 224);
+    bottom: 0px;
+
+    ul {
+        li {
+            border-color: blue;
+        }
+    }
+}
+

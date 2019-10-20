@@ -1,0 +1,170 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="CSS/1.css">
+    <link rel="stylesheet" href="CSS/2.css">
+    <link rel="stylesheet" href="CSS/3.css">
+    <link rel="stylesheet" href="CSS/4.css">
+
+    <style>
+        /* Popup container - can be anything you want */
+        
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Lato", sans-serif
+        }
+        
+        .w3-bar,
+        h1,
+        button {
+            font-family: "Montserrat", sans-serif
+        }
+        
+        a:link,
+        a:visited {
+            background-color: #f44336;
+            color: white;
+            padding: 30px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        a:hover,
+        a:active {
+            background-color: tomato;
+        }
+        
+        .popup {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        /* The actual popup */
+        
+        .popup .popuptext {
+            visibility: hidden;
+            width: 160px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 8px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -80px;
+        }
+        /* Popup arrow */
+        
+        .popup .popuptext::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+        }
+        /* Toggle this class - hide and show the popup */
+        
+        .popup .show {
+            visibility: visible;
+            -webkit-animation: fadeIn 1s;
+            animation: fadeIn 1s;
+        }
+        /* Add animation (fade in the popup) */
+        
+        @-webkit-keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+    <script>
+        function validateform() {
+
+            var password = document.myform.local_password.value;
+
+            if (password.length < 6) {
+                alert("Password must be at least 6 characters long.");
+                return false;
+            }
+        }
+
+        function myFunction() {
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");
+        }
+    </script>
+
+</head>
+
+<body style="text-align:center">
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a> <a href="index.jsp"
+                class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">HomePage</a>
+
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+            <a href="index.jsp" class="w3-bar-item w3-button w3-padding-large ">HomePage</a>
+        </div>
+    </div>
+
+    <header class="w3-container w3-red w3-center" style="padding:40px 16px">
+        <h1 class="w3-margin w3-jumbo" align="center">CRIME INFORMATION SYSTEM
+        </h1>
+    </header>
+
+
+    <h1 align="center">User Registration</h1><br>
+
+    <div style="text-align:center">
+
+
+        <form name="myform" method="post" action="LocalRegisterSrv" id="use" onsubmit="return validateform()">
+            <input type="email" name="local_username" placeholder="Username" required><br><br>
+            <div class="popup" onclick="myFunction()">
+                <input type="password" name="local_password" placeholder="Password" required><br><br>
+                <span class="popuptext" id="myPopup">Password must contain the following:<br>A <b>lowercase</b> letter<br>A <b>capital (uppercase)</b> letter<br>A <b>number</b><br>Minimum <b>8 characters</b></span>
+            </div>
+            <input type="text" name="local_name" placeholder="Name" required><br><br>
+            <input type="number" name="local_phone" placeholder="Mobile No." required><br><br>
+            <textarea type="text" name="local_address" row="4" cols="50" placeholder="Enter valid address..." required></textarea><br><br>
+
+            <input type="submit" value="Register">
+            <input type="reset" value=" RESET">
+
+
+        </form>
+</body>
+
+</html>

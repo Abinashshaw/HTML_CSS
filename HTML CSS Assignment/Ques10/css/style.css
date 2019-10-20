@@ -1,0 +1,135 @@
+* {
+padding: 0;
+margin: 0;
+font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    max-width: 84%;
+/* margin: 0px auto; */
+}
+
+header {
+height: 40px;
+width: 100%;
+position: absolute;
+top: 0px;
+font-size: 32px;
+font-weight: bold;
+text-align: center;
+}
+
+footer {
+height: 15px;
+width: 100%;
+position: absolute;
+bottom: 15px;
+text-align: center;
+}
+
+#main {
+box-sizing: border-box;
+width: 99%;
+margin: 0px 7px;
+position: absolute;
+top: 40px;
+bottom: 30px;
+overflow: auto;
+display: flex;
+flex-wrap: wrap;
+border: 1px solid black;
+justify-content: center;
+align-items: center;
+overflow: auto;
+}
+
+.flex-box {
+box-sizing: content-box;
+width: 200px;
+line-height: 58px;
+margin: 3px;
+border: 1px solid black;
+background-color: rgb(228, 222, 222);
+text-align: center;
+border-radius: 5px;
+flex-basis: 200px;
+}
+
+.flex-box span:first-child {
+position: relative;
+top: 15px;
+font-size: 28px;
+font-weight: bold;
+}
+.flex-box span:last-child {
+position: relative;
+bottom: 10px;
+font-size: 20px;
+font-weight: bold;
+
+}
+
+#main div:nth-of-type(n+10){
+flex-basis: 210px;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        font-size: 56px;
+    }
+    footer {
+        height: 31px;
+        font-size: 32px;
+        bottom: 31px;
+    }
+    #main {
+        top: 64px;
+        bottom: 64px;
+        width: 95%;
+        margin: 0px 15px;
+    }
+    .flex-box {
+        flex-basis: 320px;
+        line-height: 80px;
+        margin: 10px;
+    }
+    #main div:nth-of-type(n+10){
+        flex-basis: 340px;
+    }
+    .flex-box span:first-child {
+        font-size: 48px;
+    }
+    .flex-box span:last-child {
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 480px) {
+    header {
+        font-size: 40px;       
+    }
+    footer {
+        height: 20px;
+        font-size: 24px;
+        bottom: 20px;
+    }
+    #main {
+        top: 56px;
+        bottom: 44px;
+        width: 90%;
+        margin: 0px 17px;
+    } 
+    .flex-box {
+        flex-basis: 220px;
+        line-height: 60px;
+        margin: 10px;
+    }
+    #main div:nth-of-type(n+10){
+        flex-basis: 240px;
+    }
+    .flex-box span:first-child {
+        font-size: 32px;
+    }
+    .flex-box span:last-child {
+        font-size: 24px;
+    }
+}

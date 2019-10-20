@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                background-color: cyan;
+                text-align: center;
+            }
+
+            /* p which are direct child of div
+            div > p {
+                color : yellow;
+            }
+            */
+
+            /* this will be applied to all which is belonging to p 
+            p {
+                color : yellow;
+            }
+            */
+            /* general child of div is selected 
+            div +p {
+                color : yellow;
+            } 
+            */
+            /* All child of div including spandiv is selected 
+            div p {
+                color : yellow;
+            }
+            */
+            div ~p {
+                color : yellow;
+            }
+
+            /*There is a difference between div +p this will only select adjasent sibling while div ~p will select all p which is not part of div */
+        </style>
+    </head>
+    <body>
+        <h1>CSS Combinators</h1>
+        <div>
+            <p>This is First Child.</p>
+            <p>This is Second Child.</p>
+            <span>
+                <p>This is DivSpan child an adjusant selector</p>
+            </span>
+        </div>
+        <p>This is general child</p>
+        <p>This is general child</p>
+        <p>This is general child</p>
+        <p>This is general child</p>
+    </body>
+</html>
