@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.tm-container {
+    max-width: 100%;
+}
+
+mark {
+    display: block;
+    background-color: black;
+    height: 25px;
+}
+
+mark span {
+    color: white;
+    position: absolute;
+    top: 0px;
+    right: 20px;
+}
+
+.tm-header {
+    background-color: blue;
+    padding-bottom: 10px;
+}
+
+.tm-logo {
+    float: left;
+}
+.tm-nav {
+    float: right;
+    line-height: 21px;
+}
+
+.tm-nav ul li {
+    display: inline-block;
+}
+
+.tm-nav ul li a {
+    text-decoration: none;
+    padding-right: 20px;
+}
