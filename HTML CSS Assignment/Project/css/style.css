@@ -49,7 +49,8 @@ mark span::before {
 
 @media screen and (max-width: 600px) {
     mark span {
-        left: 38%;
+        left: 50%;
+        margin-left: -50px;
     }
 
     mark span small {
@@ -67,12 +68,12 @@ mark span::before {
         display: block;
         clear: both;
         margin: 0 auto;
+        /* display: none; */
     }
 
     .tm-logo {
-        padding: 0px;
         float: none;
-        margin: 0 100% 5% 100%;
+        margin: 0% 100% 0% 92%;
     }
 
     .tm-nav a {
@@ -94,6 +95,9 @@ mark span::before {
 
     .navbar-brand::after {
         content: url(../assets/mob-menu.png);
+        /* clear: both;
+        content: "";
+        display: table; */
     }
 
     

@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+mark {
+    display: block;
+    background-color: black;
+    height: 20px;
+}
+
+mark span {
+    color: white;
+    position: absolute;
+    top: 0px;
+    right:15px;
+    line-height: 15px;
+}
+
+mark span small {
+    line-height: 15px;
+    margin: 0px 10px 20px 10px;
+}
+
+mark span::before {
+    content: url('../assets/phone-icon.png');
+}
+
+.tm-logo {
+    padding: 10px;
+}
+
+.tm-nav {
+    background-color: white;
+    max-width: 100%;
+    padding: 0px;
+}
+
+#navbarMenu {
+    margin-right:10px;
+}
+
+.tm-nav-link {
+    font-weight: 700;
+    margin-left: 40px;
+}
+
+@media screen and (max-width: 600px) {
+    mark span {
+        left: 50%;
+        margin-left: -50px;
+    }
+
+    mark span small {
+        margin: 0px;
+    }
+
+    .tm-logo {
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        margin-left: -70px;
+    }
+
+    .navbar-toggler {
+        position: absolute;
+        top: 0px;
+        right: 5px;
+        top: 4px;  
+    }
+
+    .navbar-nav {
+        background-color: rgb(211, 206, 206);
+        text-align: center;
+        position: relative;
+        top: 35px;
+    }
+
+    .tm-nav-link {
+        margin: 0px;
+    }
+
+    .tm-nav-link:first-of-type, .tm-nav-link:last-of-type {
+        margin: 10px 0px;
+    }
+
+    .tm-nav-link:hover {
+        background-color: white;
+    }
+    
+    .active {
+        background-color: white;
+    }
+
+    .mob-menu {
+        margin-right: 10px;
+    }
+}
