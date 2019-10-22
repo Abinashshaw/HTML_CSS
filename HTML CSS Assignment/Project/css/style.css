@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+.tm-header {
+    background-color: white;
+}
+
 mark {
     display: block;
     background-color: black;
@@ -24,10 +28,6 @@ mark span small {
 
 mark span::before {
     content: url('../assets/phone-icon.png');
-}
-
-.tm-header {
-    background-color: white;
 }
 
 .tm-logo {
@@ -72,7 +72,7 @@ mark span::before {
     .tm-logo {
         padding: 0px;
         float: none;
-        margin: 0 70% 5% 100%;
+        margin: 0 100% 5% 100%;
     }
 
     .tm-nav a {
@@ -86,6 +86,10 @@ mark span::before {
 
     .active {
         background-color: white;
+    }
+
+    .navbar-brand {
+        padding: 0 10%;
     }
 
     .navbar-brand::after {
