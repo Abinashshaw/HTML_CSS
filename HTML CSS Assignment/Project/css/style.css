@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+mark {
+    display: block;
+    background-color: black;
+    height: 20px;
+}
+
+mark span {
+    color: white;
+    position: absolute;
+    top: 0px;
+    right:15px;
+    line-height: 15px;
+}
+
+mark span small {
+    line-height: 15px;
+    margin: 0px 10px 20px 10px;
+}
+
+mark span::before {
+    content: url('../assets/phone-icon.png');
+}
+
+.tm-header {
+    background-color: white;
+}
+
+.tm-logo {
+    float: left;
+    padding: 15px;
+}
+.tm-nav{
+    float: right;
+    line-height: 51px;
+}
+
+.tm-nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding-left: 40px;   
+}
+
+@media screen and (max-width: 600px) {
+    mark span {
+        left: 38%;
+    }
+
+    mark span small {
+        margin: 0px;
+    }
+
+    .tm-nav {
+        background-color: rgb(211, 206, 206);
+        text-align: center;
+        padding: 10px 0px;
+    }
+    
+    .tm-nav {
+        float: none;
+        display: block;
+        clear: both;
+        margin: 0 auto;
+    }
+
+    .tm-logo {
+        padding: 0px;
+        float: none;
+        margin: 0 70% 5% 100%;
+    }
+
+    .tm-nav a {
+        padding: 0px;
+        display: block;
+    }
+
+    .tm-nav a:hover {
+        background-color: white;
+    }
+
+    .active {
+        background-color: white;
+    }
+
+    .navbar-brand::after {
+        content: url(../assets/mob-menu.png);
+    }
+
+    
+  }
