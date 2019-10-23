@@ -69,11 +69,16 @@ mark span::before {
         top: 4px;  
     }
 
+    #navbarMenu {
+        margin-right:0px;
+    }
+
     .navbar-nav {
         background-color: rgb(211, 206, 206);
         text-align: center;
         position: relative;
         top: 35px;
+        z-index: 1040;
     }
 
     .tm-nav-link {

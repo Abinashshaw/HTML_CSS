@@ -33,6 +33,22 @@
     /* padding: 3.5% 0%; */
 }
 
+.tm-article {
+    position: absolute;
+    top: 488px;
+    background-color: rgb(21, 144, 245);
+    padding: 10px 20px;
+}
+
+.tm-article h4 {
+    color: white;
+    padding: 10px 0px;
+}
+
+.tm-article p {
+    line-height: 1.8;
+}
+
 @media (max-width: 768px) {
     .tm-bg-img {
         height: 265px;
@@ -43,12 +59,15 @@
     .title {
         top: 124px;
         font-size: 32px;
-
     }
     
     .desc {
         font-size: 16px;
         top: 164px;
+    }
+
+    .tm-article {
+        top: 335px;
     }
     
 }
@@ -56,5 +75,10 @@
 @media (max-width: 576px) { 
     section {
         display: none;
+    }
+
+    .tm-article {
+        top: 65px;
+        z-index: 900;
     }
 }
